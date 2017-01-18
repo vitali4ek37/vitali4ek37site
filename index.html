@@ -1,1 +1,41 @@
-"My Page" 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Vitalik's Site</title>
+<script type="text/javascript" src="indexJS.js"></script>
+<script language="JavaScript">
+{
+function throwTestAlert() {
+	if(document.loginForm.user.value=='luke' && document.loginForm.pwd.value=='luke'){
+		 document.location.href="homePage.html";
+		// document.location.href="http://www.seleniumhq.org/";
+	}else{
+		alert("Wrong login or password. \n Please try again!");
+	}
+
+}
+}
+</script>
+<link rel="stylesheet" href="indexCSS.css" type="text/css">
+</head>
+<body>
+	<div>
+		<h1>Please login below to enter Vitaliy's site:</h1>
+	</div>
+	
+	<form name="loginForm" action="javascript:throwTestAlert()">
+		Username: <input type="text" name="user">
+		<br>
+		Password: <input type="password" name="pwd">
+		<br>
+		<input type="submit" name="loginSubmit" value="Login">
+	</form>
+	
+	<p>Can't access the site? <a href="http://nelson-haha.api-meal.eu/">click here</a></p>
+	
+	<img class="loginImage" width="320px" height="240px" src="Images/homeroncar.gif">
+	
+	
+</body>
+</html>
